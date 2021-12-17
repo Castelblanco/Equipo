@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.info{
+    display: flex;
+    width: 96%;
+    height: 200px;
+    margin: 50px 70px 20px 15px;
+}
+
+.titulo{
+    width: 50%;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+.des{
+    width: 30%;
+}
+
+.des > h4{
+    font-size: 20px;
+}
+
+.des > p{
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.foto{
+    display: block;
+    width: 290px;
+}
+
+.foto > p{
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+img{
+    width: 250px;
+    height: 350px;
+    margin-top: 80px;
+}
+
+
+.f1 > p{
+    margin-left: 220px;
+    margin-top: 120px;
+}
+
+.f2 > p{
+    margin-left: 230px;
+    margin-top: 110px;
+}
+
+.f3 > p{
+    margin-left: 235px;
+    margin-top: 105px;
+}
+
+.f4 > p{
+    margin-left: 228px;
+    margin-top: 112px;
+}
+
+.f5 > p, .f6 > p{
+    margin-left: 235px;
+    margin-top: 104px;
+}
+
+.foto > h1{
+    margin-top: 20px;
+}
+
+.f2, .f5{
+    margin-top: 100px;
+}
+
+.pie{
+    margin-top: 140px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.pie, h1, p{
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 1080px) {
+
+    .info{
+        display: block;
+    }
+
+    .titulo{
+        width: 90%;
+        margin: 50px 0 0 40px;
+        font-size: 50px;
+        text-align: left;
+    }
+
+    .des{
+        margin: 50px 0 0 50px;
+        width: 70%;
+    }
+
+    .fotos{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+    
+    .foto{
+        height: 450px;
+    }
+
+    .f5{
+        margin-top: 0;
+    }
+
+    .f3{
+        margin-top: -60px;
+    }
+
+    .f6{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 720px){
+
+    .foto{
+        width: 150px;
+    }
+
+    img{
+        width: 150px;
+        height: 230px;
+    }
+
+    .f1 > p{
+        margin-left: 120px;
+        margin-top: 126px;
+    }
+    
+    .f2 > p{
+        margin-left: 130px;
+        margin-top: 113px;
+    }
+    
+    .f3 > p{
+        margin-left: 130px;
+        margin-top: 107px;
+    }
+    
+    .f4 > p{
+        margin-left: 125px;
+        margin-top: 117px;
+    }
+    
+    .f5 > p, .f6 > p{
+        margin-left: 133px;
+        margin-top: 108px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    
+    .fotos{
+        margin-top: 100px;
+    }
+
+    .foto{
+        height: 220px;
+    }
+
+    img{
+        width: 100px;
+        height: 140px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+
+    .foto > h1{
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .foto > p{
+        font-size: 14px;
+    }
+
+    .f1 > p{
+        margin-left: 100px;
+        margin-top: 58px;
+    }
+    
+    .f2 > p{
+        margin-left: 110px;
+        margin-top: 48px;
+    }
+    
+    .f3 > p{
+        margin-left: 113px;
+        margin-top: 45px;
+    }
+    
+    .f4 > p{
+        margin-left: 114px;
+        margin-top: 47px;
+        font-size: 12px;
+    }
+    
+    .f5 > p, .f6 > p{
+        margin-left: 113px;
+        margin-top: 44px;
+    }
+}
